@@ -1,14 +1,10 @@
 # Gondor Chic
 
-Une base React + Vite moderne, élégante et prête pour un premier sprint produit.
+Site de E-commerce fait par les Isildur
 
 ## Architecture
 
 - `src/pages/` : pages de navigation principales
-- `src/components/` : composants UI réutilisables et layout
-- `src/layouts/` : layout applicatif global
-- `src/routes/` : configuration React Router
-- `src/services/` : configuration Axios et services métier
 - `src/styles/` : styles Tailwind CSS et imports globaux
 
 ## Installation
@@ -49,20 +45,10 @@ npm run lint
 src/
   assets/
   components/
-    layout/
-      Footer.jsx
-      Navbar.jsx
-    ui/
-      Button.jsx
-      SectionTitle.jsx
   layouts/
     MainLayout.jsx
   pages/
-    HomePage.jsx
-  routes/
-    AppRouter.jsx
-  services/
-    api.js
+    LoginPage.jsx
   styles/
     tailwind.css
   App.jsx
