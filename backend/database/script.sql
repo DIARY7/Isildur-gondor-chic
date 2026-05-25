@@ -10,6 +10,7 @@ CREATE TABLE utilisateur(
 CREATE TABLE produit(
    id SERIAL,
    libelle VARCHAR(250)  NOT NULL,
+   description TEXT,
    est_du_jour BOOLEAN DEFAULT False,
    prix NUMERIC(15,2)   NOT NULL,
    qte_stock INTEGER NOT NULL,

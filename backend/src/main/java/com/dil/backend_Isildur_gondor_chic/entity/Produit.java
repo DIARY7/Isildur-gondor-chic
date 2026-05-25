@@ -22,6 +22,9 @@ public class Produit {
     @Column(name = "libelle", nullable = false, length = 250)
     private String libelle;
 
+    @Column(name = "description", columnDefinition = "TEXT")
+    private String description;
+
     @Column(name = "est_du_jour")
     private Boolean estDuJour = false;
 
@@ -36,12 +39,13 @@ public class Produit {
 
     public Produit() {}
 
-    public Produit(String libelle, Boolean estDuJour, BigDecimal prix, Integer qteStock, String img) {
+    public Produit(String libelle, Boolean estDuJour, BigDecimal prix, Integer qteStock, String img, String description) {
         this.libelle = libelle;
         this.estDuJour = estDuJour;
         this.prix = prix;
         this.qteStock = qteStock;
         this.img = img;
+        this.description = description;
     }
 
 
@@ -53,6 +57,7 @@ public class Produit {
                 ", estDuJour=" + estDuJour +
                 ", prix=" + prix +
                 ", qteStock=" + qteStock +
+                ", description='" + description + '\'' +
                 '}';
     }
 }
