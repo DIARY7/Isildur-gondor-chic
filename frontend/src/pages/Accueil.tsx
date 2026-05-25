@@ -125,7 +125,7 @@ export default function Accueil() {
               className="font-['Cormorant_Garamond',serif] text-[2.6rem] font-normal tracking-[0.01em] leading-tight relative inline-block"
               style={{ color: "var(--gondor-label)" }}
             >
-              {utilisateur ? `${utilisateur.prenom} ${utilisateur.nom}` : "—"}
+              {utilisateur ? `${utilisateur.nom} ${utilisateur.prenom} ` : "—"}
 
               {/* Trait centré en bas, 25% de largeur */}
               <span
