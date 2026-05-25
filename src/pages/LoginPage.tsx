@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
+import { useNavigate } from "react-router-dom";
 
 const LoginPage: React.FC = () => {
   const [pseudo, setPseudo] = useState("");
   const [accessKey, setAccessKey] = useState();
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Tentative de connexion:", { pseudo, accessKey });
-  };
+  const navigate = useNavigate()
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    // validation...
+    navigate('/accueil') // 👈 redirige vers la page d'accueil
+  }
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-gondor-bg">
